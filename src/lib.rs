@@ -8,8 +8,8 @@
 //!
 //! ```rust,ignore
 //! extern crate npmrc;
-//! let json = npmrc::read().unwrap();
-//! println!("{:?}", json);
+//! let npmrc_values = npmrc::read().unwrap();
+//! println!("{:?}", npmrc_values);
 //! ```
 #[macro_use(format_err)]
 extern crate failure;
