@@ -6,12 +6,11 @@
 //!
 //! ## Usage
 //!
-///
-/// ```rust
-/// extern crate npmrc;
-/// let json = npmrc::read().unwrap();
-/// println!("{:?}", json);
-/// ```
+//! ```rust,ignore
+//! extern crate npmrc;
+//! let json = npmrc::read().unwrap();
+//! println!("{:?}", json);
+//! ```
 #[macro_use(format_err)]
 extern crate failure;
 extern crate serde;
