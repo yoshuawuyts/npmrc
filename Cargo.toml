@@ -3,6 +3,7 @@ name = "npmrc"
 description = "Read and parse .npmrc files."
 version = "0.1.0"
 authors = ["Yoshua Wuyts <yoshuawuyts@gmail.com>"]
+repository = "https://github.com/yoshuawuyts/npmrc"
 license = "Apache-2.0"
 
 [dependencies]
