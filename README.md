@@ -11,13 +11,12 @@ $ cargo add npmrc
 
 ## Links
 - [documentation][8]
-- [crate][2]
+- [crate][6]
 
 ## License
 [Apache-2.0](./LICENSE)
 
 [1]: https://img.shields.io/crates/v/npmrc.svg?style=flat-square
-[2]: https://crates.io/crate/npmrc
 [3]: https://img.shields.io/travis/yoshuawuyts/npmrc.svg?style=flat-square
 [4]: https://travis-ci.org/yoshuawuyts/npmrc
 [5]: https://img.shields.io/crates/d/npmrc.svg?style=flat-square
