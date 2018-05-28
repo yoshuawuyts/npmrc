@@ -19,8 +19,7 @@ extern crate serde_derive;
 extern crate serde_ini;
 
 use failure::Error;
-use std::fs::File;
-use std::io::prelude::*;
+use std::fs;
 use std::str::FromStr;
 use serde::{de, Deserialize, Deserializer};
 
@@ -128,10 +127,8 @@ pub fn read() -> Result<Npmrc, Error> {
     Some(home_path) => home_path.join(".npmrc"),
   };
 
-  let mut npmrc_file = File::open(npmrc_path)?;
-  let mut npmrc_contents = String::new();
-  npmrc_file.read_to_string(&mut npmrc_contents)?;
+  let npmrc = fs::read_to_string(npmrc_path)?;
 
-  let contents = serde_ini::from_str(&npmrc_contents)?;
+  let contents = serde_ini::from_str(&npmrc)?;
   Ok(contents)
 }
