@@ -1,7 +1,3 @@
-#![deny(warnings, missing_docs)]
-#![cfg_attr(test, feature(plugin))]
-// #![cfg_attr(test, plugin(clippy))]
-
 //! Read out npm's `.npmrc` file, and serialize it to a struct.
 //!
 //! ## Usage
