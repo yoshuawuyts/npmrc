@@ -15,9 +15,9 @@ extern crate serde_derive;
 extern crate serde_ini;
 
 use failure::Error;
+use serde::{de, Deserialize, Deserializer};
 use std::fs;
 use std::str::FromStr;
-use serde::{de, Deserialize, Deserializer};
 
 // `serde_ini` only supports serializing to string types, so we have to define
 // a custom deserializer.
