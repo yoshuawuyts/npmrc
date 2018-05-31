@@ -12,6 +12,3 @@ serde_ini = "0.1.3"
 serde = "1.0.27"
 serde_derive = "1.0.27"
 failure = "0.1.1"
-
-[dev-dependencies]
-clippy = "0.0.186"
